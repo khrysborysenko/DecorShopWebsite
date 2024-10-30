@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Shelter</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    @media (max-width: 320px) {
+      figure.logo {
+        display: none;
+      }
+      .art h2{
+        font-size: 20px;
+      } 
+      .art h3{
+        font-size: 15px;
+      }
+    }
+
+    @media (max-width: 480px) {
+    
+      figure.logo {
+        background-color: rgb(255, 255, 255);
+      }
+
+      figure.logo figcaption {
+        color: #333;
+      }
+      
+        }
+    
+        @media (max-width: 768px) {
+          .headf{
+            width: 50%;
+          }
+          figure.logo {
+        width: 50%;
+          }
+          .tovar{
+            
+            flex-direction: column;
+          }
+          .product-item{
+            max-width: 385px;
+          }
+        }
+  
+
+    @media screen and (max-width: 1024px) {
+      div.main {
+        flex-direction: column;
+      }
+      div.headerr {
+        display: none;
+      }
+
+      div.navbar {
+        flex-direction: column;
+      }
+    }
+
+
+  
+
+    .navbar {
+      display: flex;
+
+    }
+
+    button {
+      background-color: #fc5a5a;
+      color: white;
+      padding: 14px 20px;
+      margin: 8px 0;
+      border: 1px solid #ffffff;
+      cursor: pointer;
+      text-align: center;
+
+    }
+
+    button:hover {
+      opacity: 0.8;
+    }
+
+    .tovar {
+      padding: 10px;
+      width: 100%;
+      float: left;
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .headf {
+      padding: 0px;
+      width: 100%;
+    }
+.logo p{
+  display: flex;
+}
+    .logo {
+      float: left;
+      border: 2px solid #333;
+      padding: 7px;
+      margin: 0 0 0 17px;
+      background-color: #5e6b69;
+
+    }
+
+    .logo figcaption {
+      margin: 2px;
+      color: #ffffff;
+    }
+
+    #form {
+      width: 100%;
+      padding: 10px 30px;
+      display: flex;
+      border: 2px solid #333;
+    }
+
+    ul.nav {
+      margin-left: auto;
+    margin-right: auto;
+      /* margin: 10px 30px; */
+      padding-left: 0px;
+      list-style: none;
+
+    }
+
+    .nav li {
+      display: inline;
+    }
+
+    ul.nav a {
+      display: inline-flex;
+      width: 11em;
+      padding: 15px;
+      margin: 0 8px;
+      background-color: #5e6b69;
+      border: 2px solid #333;
+      text-decoration: none;
+      color: #ffffff;
+      text-align: center;
+    }
+
+    ul.nav a:hover {
+      background-color: #f4f4f4;
+      color: #333;
+    }
+    * {
+      box-sizing: border-box;
+    }
+
+    .product-item {
+      text-align: center;
+      margin: 0 auto;
+      border-bottom: 2px solid #F5F5F5;
+      background: white;
+      font-family: "Open Sans";
+      transition: .3s ease-in;
+      flex: 25%;
+    }
+
+    .product-item:hover {
+      border-bottom: 2px solid #fc5a5a;
+    }
+
+    .product-item img {
+      display: flex;
+      width: 100%;
+    }
+
+    .product-list {
+      background: #fafafa;
+      padding: 15px 0;
+    }
+
+    .product-list h3 {
+      font-size: 18px;
+      font-weight: 400;
+      color: #333;
+      margin: 0 0 10px 0;
+    }
+
+    .price {
+      font-size: 16px;
+      color: #fc5a5a;
+      display: block;
+      margin-bottom: 12px;
+    }
+
+    .button {
+      text-decoration: none;
+      display: inline-block;
+      padding: 0 12px;
+      background: #5e6b69;
+      color: white;
+      text-transform: uppercase;
+      font-size: 12px;
+      line-height: 28px;
+      transition: .3s ease-in;
+    }
+
+    .product-item:hover .button {
+      background: #fc5a5a;
+
+    }
+
+    #contacts {
+      margin-left: 10%;
+      padding-left: 5%;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="headf">
+    <figure class="logo">
+      <p><img src="https://mir-s3-cdn-cf.behance.net/projects/404/9f1526100997459.Y3JvcCw4MDgsNjMyLDAsMA.png"
+          width="210" height="110" alt="Logo_pic"></p>
+      <figcaption>MAKE YOURSELF AT HOME</figcaption>
+    </figure>
+    <div class="headerr" style="background-color: #5e6b69; padding: 15px; border: 2px solid #333;">
+      <a style="margin-left:10%; color: #ffffff">Mon-Fri: 9:00 AM - 9:00 PM</a>
+      <a id="contacts" style="color: #ffffff" href="tel: +38(095)126-24-06">tel: +38(095)126-24-06</a>
+      <button style="margin-left: 15%; width: 12em; color: #ffffff;">Request the call</button>
+      <br>
+    </div>
+    <div class="navbar">
+      <ul class="nav">
+        <li><a href="#">About shop</a></li>
+        <li><a href="#">Production</a></li>
+        <li><a href="#">Product prices</a></li>
+        <li><a href="#">To order</a></li>
+        <li><a href="#">Delivery</a></li>
+        <li><a href="#">Contacts</a></li>
+
+      </ul>
+    </div>
+
+    <hr align="center" width="100%" size="2" color="#333" />
+  </div>
+  <h3 style="margin-left: 45px; color: #333;">Product categories:<h3>
+  <div class="tovar">
+
+    <div class="product-item">
+      <img
+        src="https://images.unsplash.com/photo-1637508858752-f047b38a0dd8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80">
+      <div class="product-list">
+        <h3>ORGANIC CANDLES</h3>
+        <span class="price">$33 to $55</span>
+        <a href="" class="button">More..</a>
+      </div>
+    </div>
+    <div class="product-item">
+      <img
+        src="https://images.unsplash.com/photo-1538577880403-f9998e75dd06?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDd8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60">
+      <div class="product-list">
+        <h3>HYPOALLERGENIC PILLOWS</h3>
+        <span class="price">$47 to $74</span>
+        <a href="" class="button">More..</a>
+      </div>
+    </div>
+    <div class="product-item">
+      <img
+        src="https://images.unsplash.com/photo-1601880777032-b289c2f0032f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80">
+      <div class="product-list">
+        <h3>NATURAL WOOL BLANKETS</h3>
+        <span class="price">$135 to $189</span>
+        <a href="" class="button">More..</a>
+      </div>
+    </div>
+    <div class="product-item">
+      <img
+        src="https://images.unsplash.com/photo-1576557310082-d13cb8c48a51?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=385&q=80">
+      <div class="product-list">
+        <h3>CHRISTMAS WREATHS</h3>
+        <span class="price">$72 to $143</span>
+        <a href="" class="button">More..</a>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="main" id="form" style="display: flex;">
+    <div class="art" style ="flex: 50%;">
+      <h2 style="color: #333;">Do you want to order products or have questions?<h2><br>
+      <h3 style="color: #333;">Fill out the feedback form and we will contact you!<h3>
+    </div>
+    <div style="border: 2px solid #333; margin: 0 auto; padding: 10px 50px">
+      <form>
+        <h3 style="color: #333;">FEEDBACK FORM</h3>
+        <label for="phone">Name</label><br>
+        <input type="text" id="name" placeholder="Name" name="uname" required><br>
+        <label for="phone">Phone number</label>
+        <br><input type="tel" id="phone" name="phone" placeholder="XXX-XX-XX" pattern="[0-9]{3}-[0-9]{2}-[0-9]{2}">
+        <br><br>
+        <button type="submit">Submit your application</button>
+    </div>
+
+    </form>
+  </div>
+</body>
+
+</html>
